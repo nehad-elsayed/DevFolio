@@ -1,0 +1,980 @@
+/***************** START  GLOBAL ***********/
+
+
+body {
+    font-family: system-ui;
+    background-color: var(--secondary-color);
+}
+
+ul {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+
+    --main-color: #0078FF;
+    --primary-color: black;
+    --main-margin: 70px;
+    --secondary-color: #F5F5F5;
+}
+
+
+html {
+    scroll-padding-top: 6rem;
+}
+
+::-webkit-scrollbar {
+
+    background-color: gray;
+    width: .75rem;
+    height: .75rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.597);
+    border-radius: .625rem;
+    transition: background-color 0.5s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--main-color);
+}
+
+
+.header {
+    text-align: center;
+    position: relative;
+
+}
+
+.header::after {
+    position: absolute;
+    content: '';
+    width: 3.75rem;
+    height: .25rem;
+    left: 43%;
+    bottom: -0.0625rem;
+    background-color: var(--main-color);
+
+}
+
+.header p {
+    padding-block: 8px;
+    font-size: 16px;
+}
+
+.header h2 {
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+/*************** start navbar  *************************/
+.my-nav {
+
+    background-color: rgba(0, 0, 0, 0.893);
+}
+
+.my-nav .whitee {
+    background-color: white;
+
+}
+
+.my-nav .whitee .nav-item a {
+    color: black;
+}
+
+.my-nav .nav-item a {
+
+    margin-inline: 7px;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.my-nav .navbar-brand {
+
+    color: white;
+    font-weight: 500;
+    font-size: 32px;
+
+}
+
+.my-nav .my-drop li a {
+    color: black !important;
+}
+
+.my-nav .my-btn {
+    background-color: white;
+}
+
+/**************** End navbar  ***********************/
+/**************** Start Home  ***********************/
+.home {
+    min-height: 100vh;
+    background: linear-gradient(86deg, rgba(0, 95, 255, 0.3114495798319328) 0%, rgba(1, 0, 10, 0.473) 0%), url("../imgs/hero-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.home .caption h1 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 32px;
+
+}
+
+.home .caption span {
+
+    margin-top: var(--main-margin);
+    position: relative;
+    margin-top: var(--main-margin);
+}
+
+.home .caption span::after {
+    content: '';
+    animation: typing 7s infinite linear;
+    color: white;
+    position: absolute;
+    bottom: -2.625rem;
+    right: -1.4375rem;
+    font-size: 20px;
+}
+
+/**** desiger - developer  breakpoints for animation--> 100/2*16 *******/
+
+
+@keyframes typing {
+    0% {
+        content: "";
+    }
+
+    1.79% {
+        content: "d";
+    }
+
+    3.57% {
+        content: "De";
+    }
+
+    5.36% {
+        content: "Des";
+    }
+
+    7.14% {
+        content: "Desi";
+    }
+
+    8.93% {
+        content: "Desig";
+    }
+
+    10.71% {
+        content: "Design";
+    }
+
+    12.50% {
+        content: "Designe";
+    }
+
+    14.29% {
+        content: "Designer";
+    }
+
+    16.07% {
+        content: "Designe";
+    }
+
+    17.86% {
+        content: "Design";
+    }
+
+    19.64% {
+        content: "Desig";
+    }
+
+    21.43% {
+        content: "Desi";
+    }
+
+    23.21% {
+        content: "Des";
+    }
+
+    25.00% {
+        content: "De";
+    }
+
+    26.79% {
+        content: "Dev";
+    }
+
+    28.57% {
+        content: "Deve";
+    }
+
+    30.36% {
+        content: "Devel";
+    }
+
+    32.14% {
+        content: "Develo";
+    }
+
+    33.93% {
+        content: "Develop";
+    }
+
+    35.71% {
+        content: "Develope";
+    }
+
+    37.50% {
+        content: "Developer";
+    }
+
+    39.29% {
+        content: "Develope";
+    }
+
+    41.07% {
+        content: "Develop";
+    }
+
+    42.86% {
+        content: "Develo";
+    }
+
+    44.64% {
+        content: "Devel";
+    }
+
+    46.43% {
+        content: "Deve";
+    }
+
+    48.21% {
+        content: "Dev";
+    }
+
+    50.00% {
+        content: "De";
+    }
+
+    51.79% {
+        content: "D";
+    }
+
+    53.57% {
+        content: "";
+    }
+
+    55.36% {
+        content: "F";
+    }
+
+    57.14% {
+        content: "Fr";
+    }
+
+    58.93% {
+        content: "Fre";
+    }
+
+    60.71% {
+        content: "Free";
+    }
+
+    62.50% {
+        content: "Freel";
+    }
+
+    64.29% {
+        content: "Freela";
+    }
+
+    66.07% {
+        content: "Freelan";
+    }
+
+    67.86% {
+        content: "Freelanc";
+    }
+
+    69.64% {
+        content: "Freelance";
+    }
+
+    71.43% {
+        content: "Freelancer";
+    }
+
+    73.21% {
+        content: "Freelance";
+    }
+
+    75.00% {
+        content: "Freelanc";
+    }
+
+    76.79% {
+        content: "Freelan";
+    }
+
+    78.57% {
+        content: "Freela";
+    }
+
+    80.36% {
+        content: "Freel";
+    }
+
+    82.14% {
+        content: "Free";
+    }
+
+    83.93% {
+        content: "Fre";
+    }
+
+    85.71% {
+        content: "Fr";
+    }
+
+    87.50% {
+        content: "F";
+    }
+
+    89.29% {
+        content: "";
+    }
+
+    91.07% {
+        content: "";
+    }
+
+    92.86% {
+        content: "";
+    }
+
+    94.64% {
+        content: "";
+    }
+
+    96.43% {
+        content: "";
+    }
+
+    98.21% {
+        content: "";
+    }
+
+    100% {
+        content: "";
+    }
+}
+
+
+
+/**************** End Home  ***********************/
+/**************** Start About  ***********************/
+
+.about {
+
+    margin-block: var(--main-margin);
+}
+
+.about .container {
+
+    background-color: white;
+    box-shadow: 0rem .1875rem .625rem -0.1875rem gray;
+
+}
+
+.about .row .image {
+    margin-left: 36px;
+    padding-block: 10px;
+}
+
+.about .row .details ul span {
+
+    color: gray;
+}
+
+.about .row .details ul li {
+    padding-block: 5px;
+}
+
+.about .content-text .title h2 {
+    font-size: 36px;
+    position: relative;
+    width: fit-content;
+}
+
+.about .content-text .title h2::after {
+
+    content: '';
+    position: absolute;
+    bottom: -0.3125rem;
+    left: .1875rem;
+    width: 85%;
+    height: .125rem;
+    background-color: var(--main-color);
+}
+
+.about .row .myskill {
+
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+
+/**************** End About  ***********************/
+/**************** Start Services   ***********************/
+
+.services {
+    margin-block: var(--main-margin);
+
+}
+
+.services .icon {
+    margin-bottom: 16px;
+    color: #1e1e1e;
+    width: 3.125rem;
+    padding: 32px;
+    margin: auto;
+    height: 3.125rem;
+    border: .625rem solid var(--main-color);
+    border-radius: 50%;
+    transition: background-color 0.5s, border-color 0.5s;
+}
+
+.services .icon i {
+    font-size: 25px;
+    transition: color 0.5s;
+}
+
+.services .icon:hover i {
+    color: white;
+}
+
+.services .container .row {
+    margin-block: 20px;
+}
+
+.services .content h4 {
+    font-size: 24px;
+}
+
+.services .icon:hover {
+    border-color: #accef4;
+    background-color: var(--main-color);
+}
+
+.services .container .row .inner {
+    background-color: white;
+    box-shadow: 0rem .1875rem .25rem 0rem #80808078;
+}
+
+.services .container .row .inner p {
+    font-size: 18px;
+    padding-block: 64px;
+    padding-inline: 16px;
+    font-weight: 400;
+    color: rgb(93, 91, 91);
+}
+
+
+/**************** End  Services ***********************/
+/**************** Start  Counter ***********************/
+
+.counter {
+    margin-block: var(--main-margin);
+    color: white;
+    background: linear-gradient(149deg, #0078ffa8 0% 50%), url("../imgs/counters-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.counter .inner {
+
+    text-align: center;
+}
+
+.counter h3 {
+    font-size: 25px;
+    margin-block: 20px;
+}
+
+.counter .icon {
+
+    padding: 17px 21px;
+    border: .4375rem solid #cde1f8;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.counter .icon i {
+    font-size: 20px;
+}
+
+/**************** End  Counter ***********************/
+/**************** STart  Portfolio ***********************/
+.work {
+    margin-block: var(--main-margin);
+}
+
+.work .inner {
+
+    background-color: white;
+    box-shadow: .0625rem .125rem .1875rem 0rem #80808047;
+}
+
+.work .inner .icon {
+    bottom: .9375rem;
+    right: .9375rem;
+    max-width: fit-content;
+    min-height: fit-content;
+    border: .1875rem solid var(--main-color);
+
+}
+
+.work .inner .icon i {
+
+    color: var(--main-color);
+    font-size: 21px;
+    padding: 4px 5px;
+}
+
+.work .inner .content {
+    padding-inline: 10px;
+    padding-block: 1.875rem;
+}
+
+.work .inner .content p {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.work .inner .content .blue {
+    color: var(--main-color);
+}
+
+.work .inner .content .gray {
+    color: gray;
+}
+
+.work .inner .image img {
+    transition: transform 1s;
+}
+
+.work .inner .image img:hover {
+
+    transform: scale(1.3);
+    cursor: pointer;
+
+}
+
+/**************** End  Portfolio ***********************/
+/**************** Start  Slider ***********************/
+
+.slider {
+    margin-block: var(--main-margin);
+    padding-block: 64px;
+    background: linear-gradient(149deg, #0078ffa8 0% 50%), url("../imgs/overlay-bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slider .container-fluid {
+
+    padding-block: 7.5rem;
+}
+
+.slider .my-btn {
+
+    display: block;
+    margin: -16px auto;
+    margin-block: -16px;
+    margin: auto;
+    width: 4.875rem;
+    height: .3125rem;
+}
+
+.slider h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.slider p {
+
+    color: white;
+    padding-block: 1rem;
+
+}
+
+/**************** End Slider ***********************/
+/**************** Start Blog ***********************/
+
+
+.blog {
+
+    margin-block: var(--main-margin);
+
+}
+
+
+.blog .inner {
+
+    box-shadow: .0625rem .125rem .1875rem 0rem #80808047;
+}
+
+.blog .foot .item a {
+
+    transition: color 0.7s;
+}
+
+.blog .foot .item a:hover {
+
+    color: var(--main-color);
+}
+
+.blog .inner .text h3 {
+
+    transition: color 0.7s;
+}
+
+.blog .inner .text h3:hover {
+    color: var(--main-color);
+}
+
+.blog .inner .text p {
+    color: gray;
+}
+
+
+.blog .inner .text button {
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    color: white;
+    background-color: var(--main-color);
+    padding: .3125rem 1.1875rem;
+    text-transform: uppercase;
+    border: none;
+    font-size: .6875rem;
+    border-radius: .3125rem;
+    font-weight: 500;
+}
+
+/**************** End Blog ***********************/
+/**************** Start Contact ***********************/
+
+.contact {
+    margin-top: var(--main-margin);
+    background: linear-gradient(149deg, #0078ffa8 0% 50%), url("../imgs/overlay-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 5px 10px 2px #9E9E9E;
+
+}
+
+.contact .container {
+
+
+    padding-block: 3.125rem;
+}
+
+.contact .container .row {
+    background-color: white;
+}
+
+.contact .header h2 {
+
+    font-size: 1.25rem;
+    padding-block: .9375rem;
+    margin-block: 1.25rem;
+    font-weight: 600;
+    text-transform: unset;
+}
+
+.contact .header::after {
+
+    left: 1px;
+    bottom: 3px;
+    width: 90px !important;
+    height: 2px;
+}
+
+
+.contact form button {
+    background: #0078ff;
+    border: 5px solid var(--main-color);
+    padding: 10px 24px;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: 0.4s;
+}
+
+.contact form button:hover {
+
+    cursor: pointer;
+    border: 5px solid #accef4;
+    background-color: #0077ffc9;
+}
+
+.contact .inner-2 {
+
+    margin-top: 10px;
+}
+
+
+
+.contact .container ul li i {
+
+    color: var(--main-color);
+    font-size: 1rem;
+    padding-inline: .625rem;
+}
+
+.contact .container ul li {
+    padding-block: .4375rem;
+
+}
+
+
+.contact ul {
+    padding-left: 0 !important;
+}
+
+.contact .icons {
+
+    margin-block: 10px;
+    padding-left: 10px;
+
+
+}
+
+.contact .icons ul {
+
+    list-style: none;
+
+}
+
+.contact .icons ul li {
+    margin-inline: .3125rem;
+    margin-top: 6px;
+    display: inline-block;
+    border: 5px solid var(--main-color);
+    border-radius: 50%;
+    transition: background-color 1s, border-color 1s;
+}
+
+.contact .icons ul li i {
+    color: black;
+    font-size: 1.125rem;
+    transition: color 1s;
+}
+
+.contact .icons ul li:hover {
+
+    border-color: #accef4;
+    background-color: var(--main-color);
+
+}
+
+.contact .icons ul li:hover i {
+    color: white;
+    cursor: pointer;
+}
+
+/**************** End Contact ***********************/
+/**************** Start Footer ***********************/
+
+footer {
+    background-color: #0660c8;
+    margin-top: 0;
+    padding-block: .9375rem;
+}
+
+footer .inner {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+footer .inner span {
+    font-weight: 700;
+}
+
+/**************** End Footer ***********************/
+
+
+
+/************* start media  ***********/
+
+
+@media(min-width:35.9988rem) {
+    .home .caption h1 {
+        font-size: 48px;
+    }
+
+
+
+    .home .caption span::after {
+        content: '';
+        animation: typing 7s infinite linear;
+        color: white;
+        position: absolute;
+        bottom: -2.625rem;
+        right: -2.375rem;
+        font-size: 32px;
+    }
+
+    .about .row .image {
+        margin-left: 0;
+    }
+
+    .about .row .details ul {
+
+        padding-top: 20px;
+        margin-left: -1.875rem;
+    }
+
+
+    .header::after {
+        position: absolute;
+        content: '';
+        width: 3.75rem;
+        height: .1875rem;
+        left: 47%;
+        bottom: .125rem;
+        background-color: var(--main-color);
+
+    }
+
+    .contact .header h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact .icons ul li i {
+        font-size: 1.5rem;
+    }
+
+
+
+
+}
+
+
+@media(min-width:47.9988rem) {
+
+    .contact .header h2 {
+        font-size: 2rem;
+    }
+
+}
+
+
+@media (min-width:61.9988rem) {
+    .my-nav {
+
+        background-color: rgba(0, 0, 0, 0.901);
+    }
+
+    .my-nav .nav-item a {
+        color: white !important;
+        margin-inline: 7px;
+        font-weight: 500;
+        font-size: 17px;
+    }
+
+    .my-nav .whitee {
+        background-color: transparent;
+    }
+
+    .my-nav .navbar-brand {
+
+        color: white;
+        font-weight: 500;
+        font-size: 32px;
+
+    }
+
+    .my-nav .navbar-nav li {
+        position: relative;
+        margin-inline: 7px;
+    }
+
+    .my-nav .navbar-nav li::after {
+
+        content: '';
+        position: absolute;
+        bottom: .4375rem;
+        left: .8125rem;
+        width: 0%;
+        height: .125rem;
+        background-color: white;
+        transition: width 0.5s;
+    }
+
+
+    .my-nav .navbar-nav li:hover::after {
+
+        width: 63%;
+    }
+
+    .my-nav .navbar-nav .active::after {
+
+
+        content: '';
+        position: absolute;
+        bottom: .4375rem;
+        left: .8125rem;
+        width: 63%;
+        height: .125rem;
+        background-color: white;
+        transition: width 0.5s;
+    }
+
+
+
+    .about .content-text .title h2::after {
+
+        content: '';
+        position: absolute;
+        bottom: -0.3125rem;
+        left: .3125rem;
+        width: 90%;
+        height: .125rem;
+        background-color: var(--main-color);
+    }
+
+
+}
+
+@media (min-width:74.9988rem) {}
+
+
+@media(min-width:87.4988rem) {}
