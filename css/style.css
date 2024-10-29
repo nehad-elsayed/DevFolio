@@ -710,7 +710,7 @@ html {
     background-color: white;
 }
 
-.contact .header h2 {
+.contact .header-2 h2 {
 
     font-size: 20px;
     padding-block: 15px;
@@ -719,8 +719,10 @@ html {
     text-transform: unset;
 }
 
-.contact .header::after {
-
+.contact .header-2::after {
+    content: '';
+    position: absolute;
+    background-color: var(--main-color);
     left: .0625rem;
     bottom: .1875rem;
     width: 5.625rem !important;
