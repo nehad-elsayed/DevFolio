@@ -20,25 +20,25 @@ a {
 
     --main-color: #0078FF;
     --primary-color: black;
-    --main-margin: 70px;
+    --main-margin: 4.375rem;
     --secondary-color: #F5F5F5;
 }
 
 
 html {
-    scroll-padding-top: 6rem;
+    scroll-padding-top: 96px;
 }
 
 ::-webkit-scrollbar {
 
     background-color: gray;
-    width: .75rem;
-    height: .75rem;
+    width: 12px;
+    height: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.597);
-    border-radius: .625rem;
+    border-radius: 10px;
     transition: background-color 0.5s;
 }
 
@@ -56,22 +56,23 @@ html {
 .header::after {
     position: absolute;
     content: '';
-    width: 3.75rem;
-    height: .25rem;
-    left: 43%;
-    bottom: -0.0625rem;
+    width: 60px;
+    height: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1px;
     background-color: var(--main-color);
 
 }
 
 .header p {
-    padding-block: 8px;
-    font-size: 16px;
+    padding-block: .5rem;
+    font-size: 1rem;
 }
 
 .header h2 {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 3rem;
     text-transform: uppercase;
 }
 
@@ -92,16 +93,16 @@ html {
 
 .my-nav .nav-item a {
 
-    margin-inline: 7px;
+    margin-inline: .4375rem;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1.0625rem;
 }
 
 .my-nav .navbar-brand {
 
     color: white;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 2rem;
 
 }
 
@@ -131,7 +132,7 @@ html {
 .home .caption h1 {
     text-transform: capitalize;
     color: white;
-    font-size: 32px;
+    font-size: 2rem;
 
 }
 
@@ -147,9 +148,9 @@ html {
     animation: typing 7s infinite linear;
     color: white;
     position: absolute;
-    bottom: -2.625rem;
-    right: -1.4375rem;
-    font-size: 20px;
+    bottom: -42px;
+    right: -23px;
+    font-size: 1.25rem;
 }
 
 /**** desiger - developer  breakpoints for animation--> 100/2*16 *******/
@@ -398,13 +399,13 @@ html {
 .about .container {
 
     background-color: white;
-    box-shadow: 0rem .1875rem .625rem -0.1875rem gray;
+    box-shadow: 0px 3px 10px -3px gray;
 
 }
 
 .about .row .image {
-    margin-left: 36px;
-    padding-block: 10px;
+    margin-left: 2.25rem;
+    padding-block: .625rem;
 }
 
 .about .row .details ul span {
@@ -413,11 +414,11 @@ html {
 }
 
 .about .row .details ul li {
-    padding-block: 5px;
+    padding-block: .3125rem;
 }
 
 .about .content-text .title h2 {
-    font-size: 36px;
+    font-size: 2.25rem;
     position: relative;
     width: fit-content;
 }
@@ -426,16 +427,16 @@ html {
 
     content: '';
     position: absolute;
-    bottom: -0.3125rem;
-    left: .1875rem;
+    bottom: -5px;
+    left: 3px;
     width: 85%;
-    height: .125rem;
+    height: 2px;
     background-color: var(--main-color);
 }
 
 .about .row .myskill {
 
-    font-size: 1.25rem;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -449,19 +450,19 @@ html {
 }
 
 .services .icon {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     color: #1e1e1e;
-    width: 3.125rem;
-    padding: 32px;
+    width: 50px;
+    padding: 2rem;
     margin: auto;
-    height: 3.125rem;
-    border: .625rem solid var(--main-color);
+    height: 50px;
+    border: 10px solid var(--main-color);
     border-radius: 50%;
     transition: background-color 0.5s, border-color 0.5s;
 }
 
 .services .icon i {
-    font-size: 25px;
+    font-size: 1.5625rem;
     transition: color 0.5s;
 }
 
@@ -470,11 +471,11 @@ html {
 }
 
 .services .container .row {
-    margin-block: 20px;
+    margin-block: 1.25rem;
 }
 
 .services .content h4 {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .services .icon:hover {
@@ -484,13 +485,13 @@ html {
 
 .services .container .row .inner {
     background-color: white;
-    box-shadow: 0rem .1875rem .25rem 0rem #80808078;
+    box-shadow: 0px 3px 4px 0px #80808078;
 }
 
 .services .container .row .inner p {
-    font-size: 18px;
-    padding-block: 64px;
-    padding-inline: 16px;
+    font-size: 1.125rem;
+    padding-block: 4rem;
+    padding-inline: 1rem;
     font-weight: 400;
     color: rgb(93, 91, 91);
 }
@@ -516,20 +517,20 @@ html {
 }
 
 .counter h3 {
-    font-size: 25px;
-    margin-block: 20px;
+    font-size: 1.5625rem;
+    margin-block: 1.25rem;
 }
 
 .counter .icon {
 
-    padding: 17px 21px;
-    border: .4375rem solid #cde1f8;
+    padding: 1.0625rem 1.3125rem;
+    border: 7px solid #cde1f8;
     width: fit-content;
-    margin: 20px auto;
+    margin: 1.25rem auto;
 }
 
 .counter .icon i {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /**************** End  Counter ***********************/
@@ -541,33 +542,33 @@ html {
 .work .inner {
 
     background-color: white;
-    box-shadow: .0625rem .125rem .1875rem 0rem #80808047;
+    box-shadow: 1px 2px 3px 0px #80808047;
 }
 
 .work .inner .icon {
-    bottom: .9375rem;
-    right: .9375rem;
+    bottom: 15px;
+    right: 15px;
     max-width: fit-content;
     min-height: fit-content;
-    border: .1875rem solid var(--main-color);
+    border: 3px solid var(--main-color);
 
 }
 
 .work .inner .icon i {
 
     color: var(--main-color);
-    font-size: 21px;
-    padding: 4px 5px;
+    font-size: 1.3125rem;
+    padding: .25rem .3125rem;
 }
 
 .work .inner .content {
-    padding-inline: 10px;
-    padding-block: 1.875rem;
+    padding-inline: .625rem;
+    padding-block: 30px;
 }
 
 .work .inner .content p {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .work .inner .content .blue {
@@ -594,7 +595,7 @@ html {
 
 .slider {
     margin-block: var(--main-margin);
-    padding-block: 64px;
+    padding-block: 4rem;
     background: linear-gradient(149deg, #0078ffa8 0% 50%), url("../imgs/overlay-bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -604,29 +605,29 @@ html {
 
 .slider .container-fluid {
 
-    padding-block: 7.5rem;
+    padding-block: 120px;
 }
 
 .slider .my-btn {
 
     display: block;
-    margin: -16px auto;
-    margin-block: -16px;
+    margin: -1rem auto;
+    margin-block: -1rem;
     margin: auto;
-    width: 4.875rem;
-    height: .3125rem;
+    width: 78px;
+    height: 5px;
 }
 
 .slider h3 {
     color: white;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .slider p {
 
     color: white;
-    padding-block: 1rem;
+    padding-block: 16px;
 
 }
 
@@ -643,7 +644,7 @@ html {
 
 .blog .inner {
 
-    box-shadow: .0625rem .125rem .1875rem 0rem #80808047;
+    box-shadow: 1px 2px 3px 0px #80808047;
 }
 
 .blog .foot .item a {
@@ -677,11 +678,11 @@ html {
     left: 50%;
     color: white;
     background-color: var(--main-color);
-    padding: .3125rem 1.1875rem;
+    padding: 5px 19px;
     text-transform: uppercase;
     border: none;
-    font-size: .6875rem;
-    border-radius: .3125rem;
+    font-size: 11px;
+    border-radius: 5px;
     font-weight: 500;
 }
 
@@ -695,14 +696,14 @@ html {
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
-    box-shadow: 0px 5px 10px 2px #9E9E9E;
+    box-shadow: 0rem .3125rem .625rem .125rem #9E9E9E;
 
 }
 
 .contact .container {
 
 
-    padding-block: 3.125rem;
+    padding-block: 50px;
 }
 
 .contact .container .row {
@@ -711,41 +712,41 @@ html {
 
 .contact .header h2 {
 
-    font-size: 1.25rem;
-    padding-block: .9375rem;
-    margin-block: 1.25rem;
+    font-size: 20px;
+    padding-block: 15px;
+    margin-block: 20px;
     font-weight: 600;
     text-transform: unset;
 }
 
 .contact .header::after {
 
-    left: 1px;
-    bottom: 3px;
-    width: 90px !important;
-    height: 2px;
+    left: .0625rem;
+    bottom: .1875rem;
+    width: 5.625rem !important;
+    height: .125rem;
 }
 
 
 .contact form button {
     background: #0078ff;
-    border: 5px solid var(--main-color);
-    padding: 10px 24px;
+    border: .3125rem solid var(--main-color);
+    padding: .625rem 1.5rem;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 19.2px;
     transition: 0.4s;
 }
 
 .contact form button:hover {
 
     cursor: pointer;
-    border: 5px solid #accef4;
+    border: .3125rem solid #accef4;
     background-color: #0077ffc9;
 }
 
 .contact .inner-2 {
 
-    margin-top: 10px;
+    margin-top: .625rem;
 }
 
 
@@ -753,12 +754,12 @@ html {
 .contact .container ul li i {
 
     color: var(--main-color);
-    font-size: 1rem;
-    padding-inline: .625rem;
+    font-size: 16px;
+    padding-inline: 10px;
 }
 
 .contact .container ul li {
-    padding-block: .4375rem;
+    padding-block: 7px;
 
 }
 
@@ -769,8 +770,8 @@ html {
 
 .contact .icons {
 
-    margin-block: 10px;
-    padding-left: 10px;
+    margin-block: .625rem;
+    padding-left: .625rem;
 
 
 }
@@ -782,17 +783,17 @@ html {
 }
 
 .contact .icons ul li {
-    margin-inline: .3125rem;
-    margin-top: 6px;
+    margin-inline: 5px;
+    margin-top: .375rem;
     display: inline-block;
-    border: 5px solid var(--main-color);
+    border: .3125rem solid var(--main-color);
     border-radius: 50%;
     transition: background-color 1s, border-color 1s;
 }
 
 .contact .icons ul li i {
     color: black;
-    font-size: 1.125rem;
+    font-size: 18px;
     transition: color 1s;
 }
 
@@ -814,7 +815,7 @@ html {
 footer {
     background-color: #0660c8;
     margin-top: 0;
-    padding-block: .9375rem;
+    padding-block: 15px;
 }
 
 footer .inner {
@@ -835,9 +836,9 @@ footer .inner span {
 /************* start media  ***********/
 
 
-@media(min-width:35.9988rem) {
+@media(min-width:219.7488rem) {
     .home .caption h1 {
-        font-size: 48px;
+        font-size: 3rem;
     }
 
 
@@ -847,9 +848,9 @@ footer .inner span {
         animation: typing 7s infinite linear;
         color: white;
         position: absolute;
-        bottom: -2.625rem;
-        right: -2.375rem;
-        font-size: 32px;
+        bottom: -42px;
+        right: -38px;
+        font-size: 2rem;
     }
 
     .about .row .image {
@@ -858,28 +859,28 @@ footer .inner span {
 
     .about .row .details ul {
 
-        padding-top: 20px;
-        margin-left: -1.875rem;
+        padding-top: 1.25rem;
+        margin-left: -30px;
     }
 
 
     .header::after {
         position: absolute;
         content: '';
-        width: 3.75rem;
-        height: .1875rem;
+        width: 60px;
+        height: 3px;
         left: 47%;
-        bottom: .125rem;
+        bottom: 2px;
         background-color: var(--main-color);
 
     }
 
     .contact .header h2 {
-        font-size: 1.5rem;
+        font-size: 24px;
     }
 
     .contact .icons ul li i {
-        font-size: 1.5rem;
+        font-size: 24px;
     }
 
 
@@ -888,16 +889,16 @@ footer .inner span {
 }
 
 
-@media(min-width:47.9988rem) {
+@media(min-width:767.9808px) {
 
     .contact .header h2 {
-        font-size: 2rem;
+        font-size: 32px;
     }
 
 }
 
 
-@media (min-width:61.9988rem) {
+@media (min-width:991.9808px) {
     .my-nav {
 
         background-color: rgba(0, 0, 0, 0.901);
@@ -905,9 +906,9 @@ footer .inner span {
 
     .my-nav .nav-item a {
         color: white !important;
-        margin-inline: 7px;
+        margin-inline: .4375rem;
         font-weight: 500;
-        font-size: 17px;
+        font-size: 1.0625rem;
     }
 
     .my-nav .whitee {
@@ -918,23 +919,23 @@ footer .inner span {
 
         color: white;
         font-weight: 500;
-        font-size: 32px;
+        font-size: 2rem;
 
     }
 
     .my-nav .navbar-nav li {
         position: relative;
-        margin-inline: 7px;
+        margin-inline: .4375rem;
     }
 
     .my-nav .navbar-nav li::after {
 
         content: '';
         position: absolute;
-        bottom: .4375rem;
-        left: .8125rem;
+        bottom: 7px;
+        left: 13px;
         width: 0%;
-        height: .125rem;
+        height: 2px;
         background-color: white;
         transition: width 0.5s;
     }
@@ -950,10 +951,10 @@ footer .inner span {
 
         content: '';
         position: absolute;
-        bottom: .4375rem;
-        left: .8125rem;
+        bottom: 7px;
+        left: 13px;
         width: 63%;
-        height: .125rem;
+        height: 2px;
         background-color: white;
         transition: width 0.5s;
     }
@@ -964,17 +965,17 @@ footer .inner span {
 
         content: '';
         position: absolute;
-        bottom: -0.3125rem;
-        left: .3125rem;
+        bottom: -5px;
+        left: 5px;
         width: 90%;
-        height: .125rem;
+        height: 2px;
         background-color: var(--main-color);
     }
 
 
 }
 
-@media (min-width:74.9988rem) {}
+@media (min-width:1199.9808px) {}
 
 
-@media(min-width:87.4988rem) {}
+@media(min-width:1399.9808px) {}
